@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+
+        android:id="@+id/lead_card_view_row_layout"
+        app:cardCornerRadius="10dp"
+        >
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:id="@+id/notification_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="10dp"
+            android:padding="10dp"
+            >
+
+        <LinearLayout
+            android:id="@+id/titleHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/attendanceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:text="Header of title"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+            <TextView
+                android:id="@+id/check_in_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="2dp"
+                android:text="Check In"
+                android:layout_below="@+id/titleHeader"
+                />
+
+            <TextView
+                android:id="@+id/locationIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="2dp"
+                android:textColor="@color/blue"
+                android:text="📍 location"
+                android:layout_below="@id/check_in_text"
+                />
+
+            <TextView
+                android:id="@+id/location_in_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="1dp"
+                android:textColor="@color/black"
+                android:text="2924-10-12"
+                android:layout_toRightOf="@id/locationIn"
+                android:layout_below="@id/check_in_text"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                />
+
+
+            <TextView
+                android:id="@+id/check_out_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="2dp"
+                android:text="Check Out"
+                android:layout_below="@id/locationIn"
+                />
+
+            <TextView
+                android:id="@+id/locationOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="2dp"
+                android:textColor="@color/blue"
+                android:text="📍 location"
+                android:layout_below="@id/check_out_text"
+                />
+
+            <TextView
+                android:id="@+id/location_out_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="1dp"
+                android:textColor="@color/black"
+                android:text="2024-10-12"
+                android:layout_toRightOf="@id/locationOut"
+                android:layout_below="@id/check_out_text"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                />
+
+            <TextView
+                android:id="@+id/over_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:text="Over Time : 0"
+                android:layout_weight="1"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:layout_below="@id/locationOut"
+                />
+
+            <TextView
+                android:id="@+id/late"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:text="Late : 0"
+                android:layout_weight="1"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:layout_below="@id/locationOut"
+                android:layout_toRightOf="@id/over_time"
+                android:layout_alignParentRight="true"
+                android:layout_marginVertical="5dp"
+                android:gravity="end"
+                />
+
+            <Button
+                android:id="@+id/approveHr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Approve"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/black"
+                android:layout_below="@id/over_time"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="10dp"
+    android:background="@color/off_red"
+    android:elevation="10dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Team Leader"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/ptsans_regular"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageButton
+        android:id="@+id/header_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:background="@color/transparent"
+        android:src="@drawable/notification"
+        android:layout_toLeftOf="@id/header_btn_logout"/>
+
+    <ImageButton
+        android:id="@+id/header_btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        android:src="@drawable/power"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

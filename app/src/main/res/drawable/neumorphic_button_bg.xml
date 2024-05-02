@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- neumorphic_button_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Outer shadow -->
+    <corners android:radius="16dp"/>
+    <gradient
+        android:startColor="#D0D8E1"
+        android:centerColor="#BABABA"
+        android:endColor="#F0F0F0"/>
+
+    <!-- Inner shadow -->
+    <corners android:radius="16dp"/>
+    <gradient
+        android:startColor="#FFFFFF"
+        android:endColor="#ECECEC"/>
+    <padding
+        android:bottom="4dp"
+        android:left="4dp"
+        android:right="4dp"
+        android:top="4dp"/>
+</shape>

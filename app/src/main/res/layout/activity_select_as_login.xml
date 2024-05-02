@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/background2"
+
+tools:context=".view.activity.SelectAsLoginActivity">
+
+<include layout="@layout/header_of_layout" android:id="@+id/loginLayout" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do Login"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/managerLoginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as Manager"
+        app:cornerRadius="4dp"
+        app:backgroundTint="@color/off_red_btn"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tLLoginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as Team Leader"
+        app:cornerRadius="4dp"
+        app:backgroundTint="@color/off_red_btn"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/technicianLoginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as Decorator"
+        app:cornerRadius="4dp"
+        app:backgroundTint="@color/off_red_btn"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hrLoginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as HR"
+        app:cornerRadius="4dp"
+        app:backgroundTint="@color/off_red_btn"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>

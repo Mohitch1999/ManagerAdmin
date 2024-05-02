@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".view.fragment.decorator.UpdateLeadStatusFragment">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/header_of_layout"/>
+
+    <TextView
+        android:id="@+id/lead_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title Name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/collect_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/leave_for_decoration_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave For Decoration"
+        android:backgroundTint="@color/off_red_btn"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/reached_decoration_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reached Decoration"
+        android:backgroundTint="@color/off_red_btn"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+
+    <Button
+        android:id="@+id/video_before_decoration_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Video Before Decoration"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/off_red_btn"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/video_after_decoration_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Video After Decoration"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/off_red_btn"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/cash_or_online_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash Or Online"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/off_red_btn"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/view_lead_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Lead Images"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/off_red_btn"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/view_cash_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Cash Image"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/off_red_btn"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/view_video_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Videos"
+        android:backgroundTint="@color/off_red_btn"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
+
+</FrameLayout>

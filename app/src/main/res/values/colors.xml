@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#DCDCDC</color>
+    <color name="darkgrey">#ACA8A8</color>
+    <color name="blue">#137CEA</color>
+    <color name="off_white">#F4EFEF</color>
+<!--    <color name="off_red">#F7FBC59E</color>-->
+    <color name="off_red">#899c87</color>
+    <color name="off_red_btn">#899c87</color>
+    <color name="dialog_green">#c4d2be</color>
+    <color name="red">#FF041C</color>
+
+    <color name="status_bar">#cedcc6</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="orange">#FFD280</color>
+    <color name="green">#BBFF80</color>
+</resources>

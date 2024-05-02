@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".view.fragment.attendance.AttendanceImageFragment">
+
+    <ProgressBar
+
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <include layout="@layout/header_of_layout"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IN : "
+            android:textStyle="italic|bold"
+            android:layout_margin="10dp"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:id="@+id/inAttendanceImage"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out : "
+            android:textStyle="italic|bold"
+            android:layout_margin="10dp"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:id="@+id/outAttendanceImage"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>

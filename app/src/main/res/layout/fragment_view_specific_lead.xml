@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.manager.ViewSpecificLeadFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/header_of_layout"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/lead_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Name : "
+                    android:layout_margin="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/lead_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Mobile No. : "
+
+                    android:layout_margin="3dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/lead_whatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Whatsapp No. : "
+
+                    android:layout_margin="3dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/generate_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Register Date : "
+
+                    android:layout_margin="3dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/lead_decor_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Decoration Date : "
+
+                    android:layout_margin="3dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/lead_decor_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Decoration Time : "
+
+                    android:layout_margin="3dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/lead_total_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Total Amount : "
+
+                    android:layout_margin="3dp"
+
+                    />
+                <TextView
+                    android:id="@+id/lead_recieve_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Recieve Amount : "
+
+                    android:layout_margin="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/lead_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:text="Status : "
+
+                    android:layout_margin="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/blue"
+                    android:text="Location"
+                    android:layout_margin="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_margin="3dp"
+                    android:text="Address : "
+
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Description : "
+                    android:layout_margin="3dp"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/update_lead_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Lead"
+                    app:cornerRadius="4dp"
+                    app:backgroundTint="@color/off_red_btn"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="4dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/view_image_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Images"
+                    app:cornerRadius="4dp"
+                    app:backgroundTint="@color/off_red_btn"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="4dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/view_video_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Videos"
+                    app:cornerRadius="4dp"
+                    app:backgroundTint="@color/off_red_btn"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="4dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/view_cash_images_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Cash Image"
+                    app:cornerRadius="4dp"
+                    app:backgroundTint="@color/off_red_btn"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

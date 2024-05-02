@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028143896409",
+    "project_id": "managerapp-bb16d",
+    "storage_bucket": "managerapp-bb16d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028143896409:android:b8b53929852fe2d3331e48",
+        "android_client_info": {
+          "package_name": "com.example.managerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR-BL8CJECHPN5uI49vHfBJg97RUZwlAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

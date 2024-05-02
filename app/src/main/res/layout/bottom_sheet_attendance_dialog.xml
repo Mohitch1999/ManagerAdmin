@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="7dp"
+    android:background="@color/dialog_green"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:layout_marginLeft="5dp"
+        android:padding="13dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginVertical="7dp"
+        android:spinnerMode="dialog"
+        android:drawSelectorOnTop="true"/>
+
+
+    <Button
+        android:id="@+id/make_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Filter"
+        app:background="@drawable/card_view_grey"
+        android:layout_margin="2dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/off_red_btn"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="10dp"
+        android:layout_marginVertical="5dp"
+        />
+
+        <Button
+            android:id="@+id/view_all_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="All"
+            app:background="@drawable/card_view_grey"
+            android:layout_margin="2dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/off_red_btn"
+            app:layout_constraintTop_toBottomOf="@id/make_filter"
+            app:layout_constraintStart_toStartOf="parent"
+            android:elevation="10dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/view_over_time_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/off_red_btn"
+            android:text="Over Time"
+            android:textColor="@color/black"
+            android:elevation="10dp"
+            app:layout_constraintTop_toBottomOf="@id/make_filter"
+            app:layout_constraintLeft_toRightOf="@id/view_all_btn"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/view_late_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Late"
+            app:background="@color/off_red_btn"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/off_red_btn"
+            android:elevation="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/make_filter"
+            app:layout_constraintLeft_toRightOf="@id/view_over_time_btn"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"
+
+            />
+
+        <Button
+            android:id="@+id/view_total_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            app:background="@color/off_red_btn"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/off_red_btn"
+            android:elevation="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/make_filter"
+            app:layout_constraintLeft_toRightOf="@id/view_late_btn"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"
+
+            />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
